@@ -1,0 +1,58 @@
+#logo1
+{
+        width: 150px;
+        margin: auto;
+        display:block;
+}
+
+@font-face
+{
+   font-family: "ink-free";
+   src: url("ink-free.eot");
+   src: url("ink-free.eot?#amocristalab") format("embedded-opentype"),
+        url("ink-free.woff") format("woff"),
+        url("ink-free.ttf") format("truetype"),
+        url("ink-free.svg#InkFree") format("svg");
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+a:active{
+    color: white;
+}
+
+a:hover {
+    color: white;
+  }
+
+
+
+il {
+    list-style-type: none;
+  }
+  
+  li {
+    color: white;
+    background-color: #b8003d;
+    border: #000000 2px solid;
+    float: left;
+    margin-right: 10px;
+    padding: 0 4px;
+
+    
+  }
+
+.barra{
+    display: flex;
+    justify-content: center;
+}

@@ -1,3 +1,14 @@
+/* resetear estilo de navegador*/
+ *{
+  box-sizing: border-box; /*Hace que se calcule automaticamaticamente 
+  el elemento con el padding y el border para que no se salga del
+  visualizador del navegador*/
+  padding: 0%;
+  margin: 0;
+
+} 
+
+
 #logo1
 {
         width: 150px;
@@ -58,6 +69,33 @@ il {
     justify-content: center;
 }
 
-div{
+.precios{
+  
+  width: 100%;
+  
+}
+
+.lista_precio{
+  padding: 10px;
+  display: inline-table;
+  justify-content: center;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  padding: 10px;
+}
+
+h4{
   text-align: left;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }

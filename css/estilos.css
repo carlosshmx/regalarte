@@ -56,7 +56,7 @@ il {
     color: white;
     background-color: #b8003d;
     border: #dda7bc 2px solid;
-    float: left;
+    display: inline-table;
     margin-right: 10px;
     padding: 0 4px;
     border-radius: 6px;
@@ -68,10 +68,15 @@ il {
     display: flex;
     justify-content: center;
 }
+ 
+section{
+  margin: auto;
+}
 
 .precios{
   
   width: 100%;
+  border-collapse: collapse;
   
 }
 
@@ -79,6 +84,8 @@ il {
   padding: 10px;
   display: inline-table;
   justify-content: center;
+  margin: 0;
+  
 }
 
 h1{
@@ -95,7 +102,15 @@ h3{
 }
 
 h4{
-  text-align: left;
+
   padding-top: 15px;
   padding-bottom: 5px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fc95ae;
+}
+
+footer{
+  text-align: center;
 }

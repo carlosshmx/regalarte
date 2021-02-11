@@ -9,26 +9,23 @@
 } 
 
 
-#logo1
+.logo1
 {
-        width: 150px;
+        width: 200px;
         margin: auto;
         display:block;
 }
 
-@font-face
-{
-   font-family: "ink-free";
-   src: url("ink-free.eot");
-   src: url("ink-free.eot?#amocristalab") format("embedded-opentype"),
-        url("ink-free.woff") format("woff"),
-        url("ink-free.ttf") format("truetype"),
-        url("ink-free.svg#InkFree") format("svg");
-}
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #ffe2eb;
+    
 
+}
+
+.seccion-precios{
+  text-align: center;
 }
 
 a:link{
@@ -41,37 +38,41 @@ a:visited{
 a:active{
     color: white;
 }
-
-a:hover {
-    color: white;
-  }
-
-
-
-il {
-    list-style-type: none;
-  }
+a:hover{
+  color: #b8003d;
   
-  li {
+}
+
+
+  
+.barra-nav li {
     color: white;
     background-color: #b8003d;
     border: #dda7bc 2px solid;
     display: inline-table;
-    margin-right: 10px;
+    margin: 3px;
     padding: 0 4px;
     border-radius: 6px;
 
     
   }
 
-.barra{
+.barra-nav li:hover{
+  color: #b8003d;
+  background-color: #ffc2d9;
+  font-weight: bold;
+  border: #b8003d 2px solid;
+  
+  
+}
+
+
+
+.barra-nav{
     display: flex;
     justify-content: center;
 }
  
-section{
-  margin: auto;
-}
 
 .precios{
   
@@ -87,6 +88,12 @@ section{
   margin: 0;
   
 }
+
+.lista_precio td{
+  padding: 4px;
+  text-align: left;
+}
+
 
 h1{
   text-align: center;
@@ -109,6 +116,7 @@ h4{
 
 tbody tr:nth-child(odd) {
   background-color: #fc95ae;
+  color: #1f1f1f;
 }
 
 footer{

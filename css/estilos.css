@@ -18,11 +18,13 @@
 
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;  
     background-color: #ffe2eb;
     
 
 }
+
+
 
 .seccion-precios{
   text-align: center;
@@ -43,7 +45,9 @@ a:hover{
   
 }
 
-
+a{
+  transition: color 0.5 ;
+}
   
 .barra-nav li {
     color: white;
@@ -65,6 +69,12 @@ a:hover{
   
   
 }
+
+.barra-nav li{
+  transition: color 0.5s ,background-color 0.5s;
+}
+
+
 
 
 
@@ -122,3 +132,30 @@ tbody tr:nth-child(odd) {
 footer{
   text-align: center;
 }
+
+
+
+/* estilos de galeria */
+
+.galeria div{
+  display: inline;
+  padding: 2px;
+}
+
+.imagen{
+  width: 10em;
+}
+
+
+.imagen:hover{
+  opacity: 70%;
+}
+
+.imagen{
+  transition: opacity 0.5s ;
+}
+
+.galeria{
+  text-align: center;
+}
+

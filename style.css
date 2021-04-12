@@ -102,8 +102,10 @@ main .prices{
     color: #e6145a;
 }
 
-main .prices li{
+main .prices ol{
     font-size: 1.4rem;
+    list-style: none;
+    margin-bottom: 10px;
 }
 
 /* MAIN PRECIOS */
@@ -195,6 +197,7 @@ main .precios-container .salados{
     font-size: 1.4rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 

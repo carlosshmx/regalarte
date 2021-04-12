@@ -21,6 +21,8 @@ h2{
     font-size: 2.4rem;
 }
 
+
+
 /*HEADER */
 
 header{
@@ -72,10 +74,9 @@ header .nav-container li a{
 
 main .desc-container{
     width: 100vw;
-    height: 248px;
     background:#e6145a;
     color: #fff;
-    padding: 7px;
+    padding: 10px 7px;
     text-align: center;
     
 }
@@ -91,18 +92,25 @@ main .desc-container p{
     width: 340px;
     font-size: 1.4rem;
     text-align:center;
+    margin-bottom: 10px;
 }
 
 main .desc-container i{
     margin: 10px auto;
     font-size: 8rem;
 }
-main .prices{
+
+main .pinkbox i{
+    color: #fff;
+}
+
+main .whitebox{
     background: #fff;
     color: #e6145a;
 }
 
-main .prices ol{
+
+main .whitebox ol{
     font-size: 1.4rem;
     list-style: none;
     margin-bottom: 10px;
@@ -157,17 +165,16 @@ main .precios-container .salados{
     text-align: center;
 }
 
-.precios-container .imgX2{
+
+.imgX2{
     display: flex;
     justify-content: center;
 }
 
-.precios-container .imgX2 img{
+ .imgX2 img{
     width: 170px;
     margin: 5px;
 }
-
-
 
 
 
@@ -219,7 +226,7 @@ main .precios-container .salados{
     text-align: center;
 }
 
-.combo-container img{
+.combo-img img{
     width: 350px;
 }
 

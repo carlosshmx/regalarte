@@ -13,6 +13,14 @@ html{
     font-size: 62.5%;
 }
 
+h1{
+    font-size: 2.6rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
 /*HEADER */
 
 header{
@@ -104,6 +112,7 @@ main .precios-container{
     display: flex;
     flex-direction: column;
 
+
 }
 
 main .precios-container h3 , main .precios-container h4{
@@ -129,9 +138,114 @@ main .precios-container table{
 main .precios-container .dulces{
     background: #e6145a;
     color: #fff;
+    padding-bottom: 10px;
 }
 
 main .precios-container .salados{
     background: #fff ;
     color: #e6145a;
+    padding-bottom: 10px;
 }
+
+.precios-container img{
+    width: 350px;
+}
+
+.precios-container .precios-img{
+    text-align: center;
+}
+
+.precios-container .imgX2{
+    display: flex;
+    justify-content: center;
+}
+
+.precios-container .imgX2 img{
+    width: 170px;
+    margin: 5px;
+}
+
+
+
+
+
+/* -------------MAIN COMBOS--------------  */
+
+.boxA{
+    background: #e6145a;
+    color: #fff;
+}
+
+.boxB{
+    color: #e6145a;
+}
+
+.combo-container{
+    padding: 10px 0;
+    
+}
+
+.combo-container h1 {
+    text-align: center;
+}
+
+.combo-container .desc-combo{
+    list-style: square;
+    margin: 10px 25px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.combo-container h2{
+    width: 90px;
+    font-size: 4.5rem;
+    padding: 5px;
+    background: #fff;
+    color: #e6145a;
+    border-radius: 40px;
+}
+
+.boxB h2{
+    background: #e6145a;
+    color: #fff;
+}
+
+.combo-container .combo-img{
+    text-align: center;
+}
+
+.combo-container img{
+    width: 350px;
+}
+
+
+
+/* ----------------MAIN CONTACTOS------------- */
+
+.con-boxes-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.con-boxes-container i{
+    font-size: 8rem;
+}
+
+.con-boxA, .con-boxB{
+    background: #e6145a;
+    color: #fff;
+    width: 175px;
+    height: 175px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 27px;
+}
+
+.con-boxB{
+    background: #fff;
+    color: #e6145a;
+}
+

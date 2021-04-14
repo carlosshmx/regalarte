@@ -110,11 +110,13 @@ main .whitebox{
 }
 
 
-main .whitebox ol{
+main ol{
     font-size: 1.4rem;
     list-style: none;
     margin-bottom: 10px;
 }
+
+
 
 /* MAIN PRECIOS */
 

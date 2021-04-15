@@ -20,6 +20,9 @@ h1{
 h2{
     font-size: 2.4rem;
 }
+h3{
+    font-size: 2rem;
+}
 
 
 
@@ -127,19 +130,20 @@ main .precios-container{
 
 }
 
-main .precios-container h3 , main .precios-container h4{
+main .precios-container h1 , main .precios-container h3{
     text-align: center;
     margin: 4px auto;
 
 }
 main .precios-container h3{
-    font-size: 2.6rem;
     margin-top: 10px;
 }
 
-main .precios-container h4{
-    font-size: 2rem;
+main .precios-container p{
+    text-align: center;
+    font-size: 1.4rem;
 }
+
 
 main .precios-container table{
     margin: auto;
@@ -147,13 +151,13 @@ main .precios-container table{
     margin-bottom: 10px;
 }
 
-main .precios-container .dulces{
+main .precios-container .pinkbox{
     background: #e6145a;
     color: #fff;
     padding-bottom: 10px;
 }
 
-main .precios-container .salados{
+main .precios-container .whitebox{
     background: #fff ;
     color: #e6145a;
     padding-bottom: 10px;

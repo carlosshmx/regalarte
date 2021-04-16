@@ -1,8 +1,25 @@
+:root{
+    --pink: #e6145a;
+    --grey: #dbdbdb;
+    --white: #fff;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+.whitebox{
+    background: var(--white);
+    color: var(--pink);
+}
+
+.pinkbox{
+    background: var(--pink);
+    color: var(--white);
+}
+
 
 a{
     text-decoration: none;
@@ -14,11 +31,11 @@ html{
 }
 
 h1{
-    font-size: 2.6rem;
+    font-size: 3rem;
 }
 
 h2{
-    font-size: 2.4rem;
+    font-size: 2.6rem;
 }
 h3{
     font-size: 2rem;
@@ -50,7 +67,7 @@ header .nav-container{
 }
 
 header .nav-container li{
-    background: #dbdbdb;
+    background: var(--grey);
     display: inline-block;
     padding-top: 10px;
     width: 75px;
@@ -60,7 +77,7 @@ header .nav-container li{
     font-weight: bold;
     font-size: 1.4rem;
     cursor: pointer;
-    margin: auto 1px;
+    margin: auto 1px; /**/
 }
 
 header .nav-container li i{
@@ -69,7 +86,7 @@ header .nav-container li i{
 
 
 header .nav-container li a{
-    color: #e6145a;
+    color: var(--pink);
 }
 
 
@@ -77,16 +94,12 @@ header .nav-container li a{
 
 main .desc-container{
     width: 100vw;
-    background:#e6145a;
-    color: #fff;
     padding: 10px 7px;
     text-align: center;
     
 }
 
-
 main .desc-container h1{
-    font-size: 2.6rem;
     text-align: center;
 }
 
@@ -104,13 +117,11 @@ main .desc-container i{
 }
 
 main .pinkbox i{
-    color: #fff;
+    background: var(--pink);
+    color: var(--white);
 }
 
-main .whitebox{
-    background: #fff;
-    color: #e6145a;
-}
+
 
 
 main ol{
@@ -127,10 +138,9 @@ main .precios-container{
     display: flex;
     flex-direction: column;
 
-
 }
 
-main .precios-container h1 , main .precios-container h3{
+main .precios-container h2 , main .precios-container h3{
     text-align: center;
     margin: 4px auto;
 
@@ -146,22 +156,20 @@ main .precios-container p{
 
 
 main .precios-container table{
+    width: 270px;
     margin: auto;
     font-size: 1.4rem;
     margin-bottom: 10px;
 }
 
-main .precios-container .pinkbox{
-    background: #e6145a;
-    color: #fff;
-    padding-bottom: 10px;
+main .precios-container table td{
+    padding: 0 10px;
 }
 
-main .precios-container .whitebox{
-    background: #fff ;
-    color: #e6145a;
-    padding-bottom: 10px;
+main .lista_precio{
+    padding: 10px 0;
 }
+
 
 .precios-container img{
     width: 350px;
@@ -186,21 +194,12 @@ main .precios-container .whitebox{
 
 /* -------------MAIN COMBOS--------------  */
 
-.boxA{
-    background: #e6145a;
-    color: #fff;
-}
-
-.boxB{
-    color: #e6145a;
-}
 
 .combo-container{
-    padding: 10px 0;
-    
+    padding: 10px 0; 
 }
 
-.combo-container h1 {
+.combo-container h2 {
     text-align: center;
 }
 
@@ -214,18 +213,12 @@ main .precios-container .whitebox{
 
 }
 
-.combo-container h2{
+.combo-container .circle-price{
     width: 90px;
     font-size: 4.5rem;
     padding: 5px;
-    background: #fff;
-    color: #e6145a;
     border-radius: 40px;
-}
-
-.boxB h2{
-    background: #e6145a;
-    color: #fff;
+    
 }
 
 .combo-container .combo-img{
@@ -250,9 +243,7 @@ main .precios-container .whitebox{
     font-size: 8rem;
 }
 
-.con-boxA, .con-boxB{
-    background: #e6145a;
-    color: #fff;
+.con-box{
     width: 175px;
     height: 175px;
     font-size: 2rem;
@@ -260,8 +251,30 @@ main .precios-container .whitebox{
     padding-top: 27px;
 }
 
-.con-boxB{
-    background: #fff;
-    color: #e6145a;
+footer{
+    background: var(--grey);
+    height: 80px;
+    text-align: center;
+    
 }
 
+footer p{
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+footer .footer--upperbox{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer--contacts{
+    display: flex;
+}
+
+.footer--contacts i{
+    font-size: 1.7rem;
+    padding-top: 8px;
+    margin-right: 4px;
+}

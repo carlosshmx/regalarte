@@ -1,0 +1,400 @@
+{
+    "cake":{
+        "sizes":{
+            "opCor":{
+                "size": "Corazón",
+                "price": 5
+            },
+            "op18":{
+                "size":"1/8 de kilo",
+                "price": 6
+            },
+            "op14":{   
+                "size" :  "1/4 de kilo",
+                "price": 12
+            },
+            "op12":{
+                "size" : "1/2 kilo",
+                "price": 20
+            },
+            "op1":{
+                "size" : "1 kilo",
+                "price": 30
+            }
+
+        },
+        "flavors":{
+            "vainilla":{
+                "flavor": "Vainilla",
+                "exp": 1
+            },
+            "chocolate":{
+                "flavor": "Chocolate",
+                "exp": 1.1
+            },
+            "marmoleada":{
+                "flavor": "Marmoleada",
+                "exp": 1.1
+            }
+        },
+        "covers":{
+            "merengue":{
+                "cover": "Merengue",
+                "exp": 1
+            },
+            "buttercream":{
+                "cover": "Buttercream",
+                "exp": 1.1
+            }
+            
+        },
+        "fills":{
+            "arequipe":{
+                "fill": "Arequipe",
+                "exp": 1
+            },
+            "merengue":{
+                "fill": "Merengue",
+                "exp": 1
+            },
+            "nutella":{
+                "fill": "Nutella",
+                "exp": 1.1
+            },
+            "chocoMani":{
+                "fill": "Chocolate, maní y galletas",
+                "exp": 1.1
+            }
+        }
+
+    },
+    "sweet":{
+        "cupcakes":{
+            "name": "Cupcakes - 3 unids",
+            "type":{
+               "vainillaMerengue":{
+                   "name": "Vainilla/Merengue",
+                   "price": 3
+               },
+               "vainillaButtercream":{
+                "name": "Vainilla/Buttercream",
+                "price": 3.5
+                },
+                "chocoMerengue":{
+                    "name": "Chocolate/Merengue",
+                    "price": 3.5
+                },
+                "chocoButtercream":{
+                    "name": "Chocolate/Buttercream",
+                    "price": 4
+                }
+            }
+        },
+        "miniCupcakes":{
+            "name": "Mini Cupcakes - 20 unids",
+            "type":{
+                "vainillaMerengue":{
+                    "name": "Vainilla/Merengue",
+                    "price": 4
+                },
+                "vainillaButtercream":{
+                 "name": "Vainilla/Buttercream",
+                 "price": 5
+                 },
+                 "chocoMerengue":{
+                     "name": "Chocolate/Merengue",
+                     "price": 5
+                 },
+                 "chocoButtercream":{
+                     "name": "Chocolate/Buttercream",
+                     "price": 6
+                 }
+             }
+        },
+        "miniBombas":{
+            "name": "Mini Bombas - 20 unids",
+            "type":{
+                "cremaPastelera":{
+                    "name": "Relleno Crema pastelera",
+                    "price": 10
+                },
+                "arequipe":{
+                    "name": "Relleno Arequipe",
+                    "price": 11
+                },
+                "nutella":{
+                    "name": "Relleno Nutella",
+                    "price": 12
+                }
+            }
+        },
+        "miniDonas":{
+            "name": "Mini Donas - 20 unids",
+            "type":{
+                "crema":{
+                    "name": "Glaseado Crema",
+                    "price": 6
+                },
+                "chocolate":{
+                    "name": "Glaseado Chocolate",
+                    "price": 7
+                }
+            }
+        },
+        "suspiros":{
+            "name": "Suspiros - 20 unids",
+            "type":{
+                "blanco":{
+                    "name": "Color Blanco",
+                    "price": 3
+                },
+                "custom":{
+                    "name": "Color Personalizado",
+                    "price": 3
+                }
+            }
+        },
+        "trufas":{
+            "name": "Trufas - 20 unids",
+            "type":{
+                "chocolate":{
+                    "name": "Cubierta Chocolate",
+                    "price": 8
+                },
+                "colores":{
+                    "name": "Cubierta Colores",
+                    "price": 8
+                }
+            }
+        },
+        "brownies":{
+            "name": "Brownies - 15 unids",
+            "type":{
+                "chocolate":{
+                    "name": "Cubierta Chocolate",
+                    "price": 10
+                }
+            }
+        },
+        "galletasCra":{
+            "name": "Galletas Craqueladas - 12 unids",
+            "type":{
+                "chocolate":{
+                    "name": "Chocolate",
+                    "price": 4
+                },
+                "vainilla":{
+                    "name": "Vainilla",
+                    "price": 4
+                }
+            }
+        },
+        "pastSec":{
+            "name": "Galletas Pasta seca - 250 gr",
+            "type":{
+                "vainilla":{
+                    "name": "Vainilla",
+                    "price": 3
+                },
+                "marmoleada":{
+                    "name": "Marmoleadas",
+                    "price": 3
+                }
+            }
+        },
+        "tartaletas":{
+            "name": "Tartaletas - 20 unids",
+            "type":{
+                "pieDeLimon":{
+                    "name": "Pie de Limón",
+                    "price": 12
+                },
+                "chocoGalletas":{
+                    "name": "Chocolate y Galleta",
+                    "price": 10
+                }
+            }
+        },
+        "shots":{
+            "name": "Shots - 20 unids",
+            "type":{
+                "cheeseFresa":{
+                    "name": "Cheescake fresa",
+                    "price": 14
+                },
+                "cheeseParchita":{
+                    "name": "Cheescake Parchita",
+                    "price": 14
+                },
+                "pieDeLimon":{
+                    "name": "Pie de Limón",
+                    "price": 14
+                },
+                "marquesaChoco":{
+                    "name": "Marquesas de Chocolate",
+                    "price": 12
+                },
+                "tresLeches":{
+                    "name": "Tres Leche",
+                    "price": 12
+                }    
+            }
+        }
+    },
+    "salty":{
+        "tequenos":{
+            "name": "Tequeños (6 cm) - 25 unids",
+            "type":{
+                "queso":{
+                    "name":"Queso",
+                    "price": 7
+                }
+            }
+        },
+        "pizza":{
+            "name": "Trozos de pizza - 25 unids",
+            "type":{
+                "jamonYQueso":{
+                    "name": "Jamón y queso",
+                    "price": 6
+                }
+            }
+        },
+        "tamales":{
+            "name":"Tamales - 25 unids",
+            "type":{
+                "comunes":{
+                    "name": "Comunes",
+                    "price": 6
+                }
+            }
+        },
+        "bolitasDeCarne":{
+            "name": "Bolitas de carne - 25 unids",
+            "type":{
+                "comunes":{
+                    "name": "Comunes",
+                    "price": 9
+                }
+            }
+        },
+        "pastelitos":{
+            "name":"Pasteles tipo coctel - 25 unids",
+            "type":{
+                "papaConQueso":{
+                    "name":"Papa con queso",
+                    "price": 6
+                },
+                "queso":{
+                    "name":"Queso",
+                    "price": 7
+                },
+                "jamonYQueso":{
+                    "name":"Jamón y queso",
+                    "price": 8
+                },
+                "pollo":{
+                    "name":"Pollo",
+                    "price": 8
+                },
+                "carneMolida":{
+                    "name":"Carne molida",
+                    "price": 8
+                },
+                "pizza":{
+                    "name":"Pizza",
+                    "price": 8
+                }
+            }
+        },
+        "arepitas":{
+            "name":"Arepas rellenas mini - 25 unids",
+            "type":{
+                "queso":{
+                    "name":"Queso",
+                    "price": 4
+                },
+                "pollo":{
+                    "name":"Pollo",
+                    "price": 5
+                },
+                "carneMolida":{
+                    "name":"Carne molida",
+                    "price": 5
+                },
+                "mixtaQuesoPollo":{
+                    "name":" Mixta Queso/Pollo",
+                    "price": 7
+                },
+                "mixtaQueso Carne":{
+                    "name":"Mixta Queso/Carne",
+                    "price": 7
+                }
+            }
+        },
+        "empanaditas":{
+            "name":"Empanadas mini - 25 unids",
+            "type":{
+                "queso":{
+                    "name":"Queso",
+                    "price": 4
+                },
+                "pollo":{
+                    "name":"Pollo",
+                    "price": 5
+                },
+                "carneMolida":{
+                    "name":"Carne molida",
+                    "price": 5
+                },
+                "mixtaQuesoPollo":{
+                    "name":" Mixta Queso/Pollo",
+                    "price": 7
+                },
+                "mixtaQueso Carne":{
+                    "name":"Mixta Queso/Carne",
+                    "price": 7
+                }
+            }
+        },
+        "salsas":{
+            "name":"Salsas",
+            "type":{
+                "rosada":{
+                    "name": "Rosada",
+                    "price": 3
+                },
+                "ajo":{
+                    "name": "Ajo",
+                    "price": 4
+                },
+                "queso":{
+                    "name": "Queso",
+                    "price": 4
+                },
+                "tartara":{
+                    "name": "Tártara",
+                    "price": 5
+                },
+                "maiz":{
+                    "name": "Maíz",
+                    "price": 6
+                },
+                "tocineta":{
+                    "name": "Tocineta",
+                    "price": 6
+                },
+                "mousseAtun":{
+                    "name": "Mousse de atún",
+                    "price": 6
+                },
+                "antipastoPollo":{
+                    "name": "Antipasto de pollo",
+                    "price": 6
+                }
+            }
+        }
+    }
+        
+}
+

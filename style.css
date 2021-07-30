@@ -1,7 +1,10 @@
 :root{
     --pink: #e6145a;
+    --blue: #4079ff;
     --grey: #dbdbdb;
     --white: #fff;
+    --softblue: #7ca3ff;
+    --softpink:#ff757a;
 }
 
 *{
@@ -12,11 +15,13 @@
 
 .whitebox{
     background: var(--white);
+    box-shadow: 0px 0px 10px var(--grey);
     color: var(--pink);
 }
 
 .pinkbox{
-    background: var(--pink);
+    background-image: linear-gradient(120deg, var(--blue) 0%, var(--pink) 100%);
+    box-shadow: 0px 0px 10px var(--grey);
     color: var(--white);
 }
 
@@ -31,7 +36,8 @@ html{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
 }
 
 h2{
@@ -43,31 +49,47 @@ h3{
 
 
 
+
 /*HEADER */
 
 header{
-    width: 100vw;
-    height: 248px;
-
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(120deg, var(--blue) 0%, var(--pink) 100%);
+    box-shadow: 0px 0px 10px var(--grey);
+    position: relative; 
+    
 }
 
 header .img-container{
-    display: flex;
-    justify-content: center;
+    position:absolute;
+    height: 160px;
+    top: 5px;
     
 }
 
 header .img-container img{
-    width: 200px;
+    height: 160px;
+
+  
 } 
 
+
+
+
 header .nav-container{
+    padding-top: 160px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 header .nav-container li{
-    background: var(--grey);
+    /* background: var(--grey); */
     display: inline-block;
     padding-top: 10px;
     width: 75px;
@@ -77,7 +99,7 @@ header .nav-container li{
     font-weight: bold;
     font-size: 1.4rem;
     cursor: pointer;
-    margin: auto 1px; /**/
+    
 }
 
 header .nav-container li i{
@@ -86,29 +108,68 @@ header .nav-container li i{
 
 
 header .nav-container li a{
-    color: var(--pink);
+    color: var(--white);
 }
 
 
 /* MAIN HOME*/
 
-main .desc-container{
-    width: 100vw;
-    padding: 10px 7px;
-    text-align: center;
-    
+.main-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+
+.welcome{
+    color: var(--pink);
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-top: 14px;
+    margin-bottom: 40px;
+
+}
+
+.welcome h1 {
+
+    background: -webkit-linear-gradient(var(--blue) , var(--pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.welcome p{
+    font-size: 1.4rem;
+}
+
+
+
+main .desc-container{
+    width: 94%;
+    min-width: 320px;
+    max-width: 414px;
+    padding: 10px 2px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
 
 main .desc-container h1{
     text-align: center;
 }
 
 main .desc-container p{
-    margin: auto;
     width: 340px;
     font-size: 1.4rem;
     text-align:center;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 main .desc-container i{
@@ -116,13 +177,15 @@ main .desc-container i{
     font-size: 8rem;
 }
 
-main .pinkbox i{
-    background: var(--pink);
-    color: var(--white);
+main .desc-container iframe{
+    width: 90%;
+    max-width: 400px;
 }
 
-
-
+main .pinkbox i{
+   
+    color: var(--white);
+}
 
 main ol{
     font-size: 1.4rem;
@@ -130,6 +193,15 @@ main ol{
     margin-bottom: 10px;
 }
 
+.combo-img img, .precios-img img{
+    box-shadow: 0px 0px 6px var(--grey);
+    border-radius: 10px;
+}
+
+iframe{
+    width:375px;
+    height: 360px;
+}
 
 
 /* MAIN PRECIOS */
@@ -252,6 +324,7 @@ main .lista_precio{
 }
 
 footer{
+    width: 100%;
     background: var(--grey);
     height: 80px;
     text-align: center;
@@ -277,4 +350,270 @@ footer .footer--upperbox{
     font-size: 1.7rem;
     padding-top: 8px;
     margin-right: 4px;
+}
+
+/* -------------PRESUPEUSTO-------------- */
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.forms button{
+    width: 120px;
+    height: 30px;
+    background-color: var(--pink);
+    border: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.forms button:hover{
+    box-shadow: 0 0 6px var(--pink);
+    transition: 300ms;
+    
+}
+
+.forms .forms_selects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.forms .showPrice_containter{
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    border-radius: 15px;
+   
+    margin-top: 4px;
+}
+
+
+.forms .showPrice_containter .showPriceText{
+    font-size: 1.5rem;
+    margin-top: 4px;
+}
+
+.forms_selects .selector{
+    text-align: center;
+    margin: 10px;
+}
+
+.forms_selects .selector select{
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.5rem;
+    
+}
+
+.pasapalos_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.puchase_container{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sumary_container{
+    width: 375px;
+    min-height: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+}
+
+
+.sumary_container .sumary_item{
+    width: 355px;
+    font-size: 1.4rem;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px var(--grey);
+    
+}
+.sumary_container .sumary_item b{
+    color:var(--pink);
+    
+}
+
+
+.sumary_container .sumary_item div{
+    display: flex;
+    align-items: center;
+}
+
+.sumary_container .sumary_item div .price_p{
+    font-size: 2rem;
+    margin: 0 10px;
+
+}
+
+.sumary_container .sumary_item div button{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.total_container{
+    width: 300px;
+    height: 160px;
+    text-align: center;
+    background-image: linear-gradient(120deg, #4079ff 0%, var(--pink) 100%);
+    border-radius: 20px;
+    color: white;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px var(--grey);
+}
+
+.total_container .dollarContainer{
+    padding-top: 10px;
+    height: 60px;
+    font-size: 1.4rem;
+    background-color: var(--grey);
+    border-radius: 20px;
+    color: rgb(56, 56, 56);
+}
+
+.total_container .buyButton{
+    height: 80px;
+    margin: 10px;
+}
+
+.total_container .buyButton p{
+    color: black;
+}
+
+.total_container .buyButton button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--pink);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 0 6px var(--grey);
+    cursor: pointer;
+
+}
+
+.total_container .buyButton button:hover{
+    box-shadow: 0 0 6px var(--pink);
+    transition: 300ms;
+}
+
+
+
+@media (min-width: 700px){
+    header{
+        height: 100px;
+    }
+
+    header .img-container{
+        height: 160px;
+        top: 10px;
+        left: 10%;
+        transition: 200ms;
+    }
+
+    header .img-container:hover{
+        top: 5px;
+        left: 9.6%;
+        transition: 200ms;
+    }
+
+    header .img-container img{
+        height: 160px;
+        transition: 200ms;
+    } 
+
+    header .img-container img:hover{
+        height: 170px;
+        transition: 200ms;
+    } 
+
+    header{
+    
+        justify-content: flex-end;
+        padding-right: 10%;
+     
+    }
+
+    header .nav-container{
+        padding-top: 0;
+    }
+
+    header .nav-container li{
+        padding-top: 10px;
+    }
+    
+    .main-page{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .welcome{
+        height: 154px;
+        text-align: center;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+
+    .welcome p{
+
+        margin: 8px 0px;
+
+    }
+    main .desc-container{
+        margin: 10px;
+    }
+    
+    iframe{
+        width:400px;
+        height: 360px;
+    }
+
+    .forms{
+        margin-top: 30px;
+    }
+
+    .sumary_container{
+        width: 490px;
+    }
+    .sumary_container .sumary_item{
+        width: 470px;
+    }
+}
+
+@media (min-width: 1500px){
+    .main-page{
+        padding: 0 85px;
+    }
 }

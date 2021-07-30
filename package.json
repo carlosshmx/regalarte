@@ -1,0 +1,19 @@
+{
+  "name": "regalarte",
+  "version": "1.0.0",
+  "description": "Regalarte Punto Fijo",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosshmx/regalarte.git"
+  },
+  "author": "Carlos Colmenares",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosshmx/regalarte/issues"
+  },
+  "homepage": "https://github.com/carlosshmx/regalarte#readme"
+}

@@ -241,7 +241,7 @@ function addItem(item , type){
         let selectedType = document.getElementById(`${type}`);
         let selectedTypeText = selectedType[selectedType.selectedIndex].text;
         let selectedTypeValue = selectedType[selectedType.selectedIndex].value;
-        selectedTypeValue = parseInt(selectedTypeValue);
+        selectedTypeValue = parseFloat(selectedTypeValue);
 
         const sumaryItemsContainer = document.querySelector(".sumary_container");
 

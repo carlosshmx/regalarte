@@ -114,6 +114,7 @@ header .nav-container li a{
 
 /* MAIN HOME*/
 
+
 .main-page{
     display: flex;
     flex-wrap: wrap;
@@ -480,39 +481,45 @@ footer .footer--upperbox{
 
 .total_container{
     width: 300px;
-    height: 160px;
     text-align: center;
-    background-image: linear-gradient(120deg, #4079ff 0%, var(--pink) 100%);
     border-radius: 20px;
     color: white;
     margin: 0 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 6px var(--grey);
+    margin-bottom: 10px;
+    /* box-shadow: 0 0 6px var(--grey); */
 }
+
+.total_container .priceContainer{
+    height: 114px;
+    background-image: linear-gradient(120deg, #4079ff 0%, var(--pink) 100%);
+    border-radius: 20px 20px 0 0 ;
+}
+
 
 .total_container .dollarContainer{
     padding-top: 10px;
     height: 60px;
     font-size: 1.4rem;
     background-color: var(--grey);
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     color: rgb(56, 56, 56);
 }
 
-.total_container .buyButton{
+.puchase_container .buyButton{
     height: 80px;
     margin: 10px;
+    padding-top: 10px
 }
 
-.total_container .buyButton p{
+.puchase_container .buyButton p{
     color: black;
 }
 
-.total_container .buyButton button{
+.puchase_container .buyButton button{
     width: 200px;
     height: 40px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: var(--pink);
     color: white;
     font-size: 2rem;
@@ -522,11 +529,86 @@ footer .footer--upperbox{
 
 }
 
-.total_container .buyButton button:hover{
+.puchase_container .buyButton button:hover{
     box-shadow: 0 0 6px var(--pink);
     transition: 300ms;
 }
 
+/* ----------- FOOTER -------------- */
+
+footer{
+    margin-top: 10px;
+}
+
+.footer_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(120deg, var(--blue) 0%, var(--pink) 100%);
+    padding-top: 10px;
+
+}
+.footer_container .rigth_footer{
+    margin: 15px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer_container .rigth_footer h3{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.footer_container .rigth_footer p{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.footer_container .rigth_footer img{
+    width: 134px;
+}
+
+.footer_container .left_footer{
+    margin: 15px 0;
+}
+
+.footer_container .left_footer ul{
+    list-style: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.footer_container .left_footer a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.footer_container .left_footer li i{
+    width: 26px;
+    font-size: 2.6rem;
+    margin-right: 10px;
+    color:white;
+}
+
+.infoDev_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 37px;
+    background-color: black;
+}
+
+.infoDev_container p{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    margin: 3px 10px 2px 10px;
+}
 
 
 @media (min-width: 700px){

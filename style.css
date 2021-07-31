@@ -13,6 +13,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .whitebox{
     background: var(--white);
     box-shadow: 0px 0px 10px var(--grey);

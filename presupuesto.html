@@ -69,7 +69,7 @@
             
             <div class="showPrice_containter">
                 <p id="showPrice_cake" class="showPriceText">Precio: $0</p>
-                <button id="addCake" onclick="addCake()">AGREGAR</button>
+                <a href="#showPrice_salty"><button id="addCake" onclick="addCake()">AGREGAR</button></a>
             </div>
         </article>
     
@@ -96,7 +96,7 @@
                 
                 <div class="showPrice_containter">
                     <p id="showPrice_sweet" class="showPriceText">Precio: $0</p>
-                    <button id="addItem" onclick='addItem("selectSweet","typeSweet")'>AGREGAR</button>
+                    <a href="#showPrice_salty"><button id="addItem1" onclick='addItem("selectSweet","typeSweet")'>AGREGAR</button></a>
                 </div>
                 
         
@@ -124,14 +124,14 @@
                 
                 <div class="showPrice_containter">
                     <p id="showPrice_salty" class="showPriceText">Precio: $0</p>
-                    <button id="addItem" onclick='addItem("selectSalty","typeSalty")'>AGREGAR</button>
+                    <a href="#showPrice_salty"><button id="addItem2" onclick='addItem("selectSalty","typeSalty")'>AGREGAR</button></a>
                 </div>
         
             </article>
         </section>    
 
         <section class="puchase_container">
-            <article class="sumary_container">
+            <article class="sumary_container" id="sumary">
                 <h2>Artículos</h2>
             </article>
         

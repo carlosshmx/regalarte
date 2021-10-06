@@ -20,7 +20,7 @@ checkPrice('https://s3.amazonaws.com/dolartoday/data.json')
     .then(json => dolar=json.USD.dolartoday)
     .then(removeLoading => {
         let dollarValue = document.getElementById("dollarValue");
-        dollarValue.innerText = `Bs. ${new Intl.NumberFormat("de-DE").format(Math.round(dolar))}`;
+        dollarValue.innerText = `Bs. ${dolar}`;   //  ${new Intl.NumberFormat("de-DE").format(Math.round(dolar))} //
     })
     .catch(dolar = 0)
 
@@ -154,10 +154,9 @@ function updatePrice(){
         priceInBs = "Conversión no disponible"
         totalPriceText.innerHTML = `<h2>$ ${totalPrice}</h2><h3> ${priceInBs}</h3>`;
     }else{
-        priceInBs = new Intl.NumberFormat("de-DE").format(Math.round(dolar*totalPrice))
-        totalPriceText.innerHTML = `<h2>$ ${totalPrice}</h2><h3>Bs ${priceInBs}</h3>`;
+        priceInBs = dolar*totalPrice;  //  new Intl.NumberFormat("de-DE").format(Math.round(dolar*totalPrice)) //
+        totalPriceText.innerHTML = `<h2>$ ${totalPrice}</h2><h3>Bs ${priceInBs.toFixed(2)}</h3>`;
     }
-    
 }
 
 function deleteItem(id, value){

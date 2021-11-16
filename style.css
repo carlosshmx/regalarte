@@ -294,7 +294,8 @@ main .lista_precio{
 .combo-container{
     padding: 10px 0;
     background-color: var(--white);
-    width: 420px;
+    min-width: 300px;
+    max-width: 450;
     margin: 30px 10px 0 10px;
     border-radius: 20px;
 }
@@ -316,8 +317,8 @@ main .lista_precio{
 
 
 .combo-container .circle-price{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     font-size: 4.5rem;
     display: flex;
     justify-content: center;
@@ -350,11 +351,12 @@ main .lista_precio{
 }
 
 .con-box{
-    width: 175px;
+    min-width: 175px;
     height: 175px;
     font-size: 2rem;
     text-align: center;
     padding-top: 27px;
+    margin: 20px 10px 0 10px; 
 }
 
 footer{
